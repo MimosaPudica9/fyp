@@ -1,0 +1,93 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3e7;
+  color: #002b36;
+}
+
+.hallticket-section {
+  padding: 120px 20px 60px;
+  background-color: #f5f3e7;
+}
+
+.hallticket-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1b7f79;
+  margin-bottom: 50px;
+}
+
+.hallticket-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.instructions-box {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  height: 400px;
+  width: 100%;
+}
+
+.instructions-box h3 {
+  font-size: 22px;
+  color: #1b7f79;
+  margin-bottom: 20px;
+}
+
+.instructions-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Button Styling */
+.view-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #1b7f79;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  margin-left: 42%;
+}
+
+/* Hover and Click */
+.view-btn:hover {
+  background-color: #145f5b;
+}
+
+.view-btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .instructions-box {
+    padding: 25px;
+  }
+
+  .hallticket-heading {
+    font-size: 28px;
+  }
+}
+
+@media(max-width: 750px){
+  .instructions-box{
+    height: 800px;
+  }
+}
+

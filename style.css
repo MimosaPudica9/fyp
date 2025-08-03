@@ -1,0 +1,512 @@
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('home\ bg\ img.jpg') no-repeat center center/cover; 
+  height: 100vh;
+  position: relative;
+} */
+
+/* Navbar */
+/* .navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background-color: #fceCDD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index:100;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #002b36;
+  font-weight: 600;
+  font-size: 16px;
+} */
+
+/* Hero Section */
+/* .hero-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px; /* to avoid overlap with navbar 
+} */
+/* .glass-box {
+  width: 80%;
+  max-width: 3000px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+.glass-box h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-top: 5rem;
+}
+.glass-box p {
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 5rem;
+}
+
+.nav-links li a:hover {
+  color: #D64933;
+} */
+
+/* .exam_cards {
+  height: 100vh; 
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  gap:50px;
+  margin-top:50px;
+}
+
+.exam1 {
+  width: 80%;
+  max-width: 400px;
+  height: 500px;
+  background: #00809D;
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #FCECDD;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.40);
+}
+
+.exam2 {
+  width: 80%;
+  max-width: 400px;
+  height: 500px;
+  background: #00809D;
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #FCECDD;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.40);
+} */
+
+/* .exam3 {
+  width: 80%;
+  max-width: 400px;
+  height: 500px;
+  background: #00809D;
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #FCECDD;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.40);
+}
+
+.btn{
+  margin-top:75%;
+  height:10%;
+  width:40%;
+  border-radius:30px ;
+  font-size:100%;
+  color: #002b36;
+}
+
+.btn:hover{
+  background-color:#FCECDD;
+  transition-delay:0.2s;
+  
+} */
+
+
+
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background-color: #fceCDD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #002b36;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #D64933;
+}
+
+/* Hamburger Menu */
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  color: #002b36;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-container {
+  min-height: 100vh;
+  background: url('home bg img.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+.glass-box {
+  width: 80%;
+  max-width: 2000px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+.glass-box h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.glass-box p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    display: none;
+  }
+
+  .nav-links.visible {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+
+
+/* .....................................................exam tab................................................. */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3e7;
+  color: #002b36;
+}
+
+/* Section Styling */
+.exam-section {
+  padding: 120px 20px 60px;
+  background-color: #ffffff;
+}
+
+.exam-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0d5d57;
+  margin-bottom: 50px;
+}
+
+/* Card Container */
+.exam-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Individual Card */
+.exam-card {
+  background-color: #0d5d57;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 30px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.exam-card h3 {
+  font-size: 22px;
+  color: #fceCDD;
+  margin-bottom: 15px;
+}
+
+.exam-card p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* Enroll Button */
+.enroll-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ffffff;
+  color: #0d5d57;;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+/* Hover Animation */
+.enroll-btn:hover {
+  background-color:  #fceCDD;
+}
+
+/* Click Animation */
+.enroll-btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .exam-cards-container {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .exam-card {
+    width: 90%;
+  }
+}
+
+
+/* ..................................................... hall ticket tab .................................................................... */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3e7;
+  color: #002b36;
+}
+
+.hallticket-section {
+  padding: 120px 20px 60px;
+  background-color: #f5f3e7;
+}
+
+.hallticket-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1b7f79;
+  margin-bottom: 50px;
+}
+
+.hallticket-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.instructions-box {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  height: 400px;
+  width: 100%;
+}
+
+.instructions-box h3 {
+  font-size: 22px;
+  color: #1b7f79;
+  margin-bottom: 20px;
+}
+
+.instructions-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Button Styling */
+.view-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #1b7f79;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  margin-left: 42%;
+}
+
+/* Hover and Click */
+.view-btn:hover {
+  background-color: #145f5b;
+}
+
+.view-btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .instructions-box {
+    padding: 25px;
+  }
+
+  .hallticket-heading {
+    font-size: 28px;
+  }
+}
+
+@media(max-width: 750px){
+  .instructions-box{
+    height: 800px;
+  }
+}
+
+/* ..................................................................contact tab...................................................................... */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fefbf3;
+}
+
+.footer {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-top: 2px solid #e2e2e2;
+  padding: 40px 0 10px 0;
+  color: #004d4d;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  color: #008080;
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section li,
+.footer-section a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #008080;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}

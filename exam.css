@@ -1,0 +1,89 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3e7;
+  color: #002b36;
+}
+
+/* Section Styling */
+.exam-section {
+  padding: 120px 20px 60px;
+  background-color: #ffffff;
+}
+
+.exam-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0d5d57;
+  margin-bottom: 50px;
+}
+
+/* Card Container */
+.exam-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Individual Card */
+.exam-card {
+  background-color: #0d5d57;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 30px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.exam-card h3 {
+  font-size: 22px;
+  color: #fceCDD;
+  margin-bottom: 15px;
+}
+
+.exam-card p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* Enroll Button */
+.enroll-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ffffff;
+  color: #0d5d57;;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+/* Hover Animation */
+.enroll-btn:hover {
+  background-color:  #fceCDD;
+}
+
+/* Click Animation */
+.enroll-btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .exam-cards-container {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .exam-card {
+    width: 90%;
+  }
+}
